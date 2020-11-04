@@ -22,7 +22,7 @@
 <body id="nightBg">
 
   <div class="container">
-    <h1 id="introHeader">Your Score:</h1> 
+    <h1 id="introHeader">Your Score:</h1>
     <div id="scoreResult"></div>
   </div>
 
@@ -33,6 +33,12 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="./app.js"></script>
+
+  <script>
+    var scoreNode = document.createElement("h1");
+    scoreNode.innerText = `${score}`
+    document.getElementById("scoreResult").append(scoreNode);
+  </script>
 </body>
 
 </html>

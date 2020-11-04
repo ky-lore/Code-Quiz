@@ -65,9 +65,14 @@ document.getElementById("inc").addEventListener('click', () => {
 });
 
 function showResults() {
+  // var scoreNode = document.createElement("h1");
+  // scoreNode.innerText = `${score}`
+  // document.getElementById("scoreResult").append(scoreNode);
   window.location.replace("./results.html")
   // I have NO idea how/why this getElementById isn't working - console says that document.getElementById("scoreResult") is a null object despite it being declared in results.html. 
-  document.getElementById("scoreResult").innerText = "owo";
+  //document.getElementById("scoreResult").innerText = "aaa";
+
+  // Upon further analyzing it seems that the page in which the onclick button exists and in which this function operates is limited to quiz.html and results.html will not render or call this function. Moving code over.
 }
 
 function loadNextQuestion() {
