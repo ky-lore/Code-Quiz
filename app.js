@@ -27,6 +27,7 @@ var qCount = 1;
 var qNum = 0;
 var score = 100;
 
+
 function loadQuestion() {
   for (; count < countLimit; count++) {
     for (i = 0; i < questions.length; i++) {
@@ -62,6 +63,7 @@ document.getElementById("inc").addEventListener('click', () => {
   document.getElementById("solved").style.color = "pink"
   document.getElementById("solved").innerText = "nah that aint it";
   score -= 33;
+  console.log(score)
 });
 
 function showResults() {
